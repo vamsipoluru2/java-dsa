@@ -1,0 +1,534 @@
+==================================================
+             JAVA MULTITHREADING NOTES
+==================================================
+
+
+FILE STRUCTURE
+--------------------------------------------------
+
+17MultiThreading
+|
+|-- src
+|   |
+|   |-- HYRMultithread
+|       |   3 ways to implamment the thread 
+|       |-- TestMultiThread.java
+|       |-- ByRunnable.java
+|       |-- Usinganomousclass.java
+|   
+|
+|-- bin
+    |
+    |-- compiled .class files
+
+
+src = Java source files (.java)
+bin = compiled files (.class)
+Threads.txt = notes
+
+
+==================================================
+1. TestMultiThread.java
+==================================================
+
+Topics:
+
+- Main thread
+- currentThread()
+- getName()
+- getId()
+- activeCount()
+
+
+Java automatically creates the main thread.
+
+Example:
+
+System.out.println(Thread.currentThread().getName());
+
+Output:
+
+main
+
+
+Get thread ID:
+
+Thread.currentThread().getId();
+
+
+Get current thread:
+
+Thread.currentThread();
+
+
+==================================================
+2. ByRunnable.java
+==================================================
+
+Topics:
+
+- Runnable
+- Thread
+- run()
+- start()
+- Multiple threads
+- Thread name
+- Thread ID
+
+
+Runnable is an INTERFACE.
+
+Thread is a CLASS.
+
+
+Example:
+
+class Employee implements Runnable {
+
+    public void run() {
+        System.out.println("Employee");
+    }
+}
+
+
+Create Employee object:
+
+Employee e1 = new Employee();
+
+
+Create Thread:
+
+Thread t1 = new Thread(e1, "t1");
+
+
+Start Thread:
+
+t1.start();
+
+
+Important:
+
+Runnable = TASK / WORK
+
+Thread = executes the TASK
+
+
+Flow:
+
+Employee object
+      ↓
+Runnable
+      ↓
+Thread
+      ↓
+start()
+      ↓
+run()
+
+
+==================================================
+3. Usinganomousclass.java
+==================================================
+
+Topics:
+
+- Lambda
+- Multiple threads
+- Thread state
+- sleep()
+- join()
+
+
+Runnable can be written using lambda because Runnable
+has only one abstract method:
+
+void run();
+
+
+Lambda example:
+
+Runnable employee = () -> {
+
+    System.out.println("Employee");
+
+};
+
+
+Then:
+
+Thread t1 = new Thread(employee, "t1");
+
+t1.start();
+
+
+==================================================
+4. ANONYMOUS CLASS
+==================================================
+
+Instead of creating a separate class:
+
+class Employee implements Runnable {
+
+    public void run() {
+        System.out.println("Employee");
+    }
+}
+
+
+We can write:
+
+Runnable employee = new Runnable() {
+
+    @Override
+    public void run() {
+        System.out.println("Employee");
+    }
+};
+
+
+This is called an Anonymous Class.
+
+
+==================================================
+5. LAMBDA
+==================================================
+
+Anonymous class:
+
+Runnable employee = new Runnable() {
+
+    public void run() {
+        System.out.println("Employee");
+    }
+};
+
+
+Lambda:
+
+Runnable employee = () -> {
+
+    System.out.println("Employee");
+
+};
+
+
+Lambda is a shorter way to implement a functional
+interface.
+
+
+==================================================
+6. start() vs run()
+==================================================
+
+start():
+
+- Creates/starts a new thread.
+- Then run() is executed by that thread.
+
+
+Example:
+
+t1.start();
+
+
+run():
+
+- Contains the work.
+- Calling run() directly does NOT create a new thread.
+
+
+Example:
+
+t1.run();
+
+
+Remember:
+
+start() → new thread
+
+run() → task/work
+
+
+==================================================
+7. TWO THREADS
+==================================================
+
+Example:
+
+Thread t1 = new Thread(employee, "t1");
+
+Thread t2 = new Thread(manager, "t2");
+
+
+t1.start();
+t2.start();
+
+
+Both threads can execute at the same time.
+
+The order is NOT guaranteed.
+
+Possible output:
+
+Employee
+Manager
+Employee
+Employee
+Manager
+
+
+Another run may be:
+
+Manager
+Employee
+Manager
+Employee
+
+
+This is because of thread scheduling.
+
+
+==================================================
+8. THREAD NAME
+==================================================
+
+Create a thread with a name:
+
+Thread t1 = new Thread(employee, "t1");
+
+
+Get name:
+
+Thread.currentThread().getName();
+
+
+Output:
+
+t1
+
+
+==================================================
+9. THREAD ID
+==================================================
+
+Get ID:
+
+Thread.currentThread().getId();
+
+
+Example:
+
+System.out.println(
+    Thread.currentThread().getName()
+    + " >> "
+    + Thread.currentThread().getId()
+);
+
+
+==================================================
+10. THREAD STATE
+==================================================
+
+Check state:
+
+t1.getState();
+
+
+Common states:
+
+NEW
+RUNNABLE
+BLOCKED
+WAITING
+TIMED_WAITING
+TERMINATED
+
+
+Basic flow:
+
+Created
+  ↓
+NEW
+  ↓
+start()
+  ↓
+RUNNABLE
+  ↓
+run()
+  ↓
+TERMINATED
+
+
+==================================================
+11. sleep()
+==================================================
+
+sleep() pauses the CURRENT thread.
+
+Example:
+
+Thread.sleep(1000);
+
+
+1000 milliseconds = 1 second.
+
+
+IMPORTANT:
+
+Thread.sleep() affects the current thread.
+
+If main thread calls:
+
+Thread.sleep(1000);
+
+then main thread sleeps.
+
+
+==================================================
+12. join()
+==================================================
+
+join() makes one thread wait for another thread.
+
+
+Example:
+
+t1.start();
+
+t1.join();
+
+t2.start();
+
+
+Meaning:
+
+Start t1
+   ↓
+Wait for t1 to finish
+   ↓
+Start t2
+
+
+Without join():
+
+t1.start();
+t2.start();
+
+
+Both can execute independently.
+
+
+==================================================
+13. activeCount()
+==================================================
+
+Used to get the number of active threads.
+
+Example:
+
+System.out.println(Thread.activeCount());
+
+
+The number can change because threads finish execution.
+
+
+==================================================
+14. THREAD CAN ONLY START ONCE
+==================================================
+
+This is NOT allowed:
+
+Thread t1 = new Thread(employee);
+
+t1.start();
+
+t1.start();    // ERROR
+
+
+A Thread object can only be started once.
+
+If you need another thread:
+
+Thread t2 = new Thread(employee);
+
+t2.start();
+
+
+==================================================
+15. SIMPLE COMPARISON
+==================================================
+
+Extending Thread:
+
+class Employee extends Thread {
+
+    public void run() {
+        ...
+    }
+}
+
+Employee e = new Employee();
+
+e.start();
+
+
+Runnable:
+
+class Employee implements Runnable {
+
+    public void run() {
+        ...
+    }
+}
+
+Employee e = new Employee();
+
+Thread t = new Thread(e);
+
+t.start();
+
+
+Anonymous class:
+
+Runnable e = new Runnable() {
+
+    public void run() {
+        ...
+    }
+};
+
+
+Lambda:
+
+Runnable e = () -> {
+
+    ...
+};
+
+
+==================================================
+                    REMEMBER
+==================================================
+
+Runnable = WHAT TO DO
+
+Thread = WHO EXECUTES IT
+
+run() = WORK
+
+start() = START NEW THREAD
+
+sleep() = PAUSE CURRENT THREAD
+
+join() = WAIT FOR ANOTHER THREAD
+
+getState() = CHECK THREAD STATE
+
+getName() = GET THREAD NAME
+
+getId() = GET THREAD ID
+
+activeCount() = NUMBER OF ACTIVE THREADS
+
+
+==================================================
