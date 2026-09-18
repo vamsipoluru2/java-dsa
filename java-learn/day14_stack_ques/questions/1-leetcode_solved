@@ -1,0 +1,75 @@
+https://leetcode.com/problems/implement-queue-using-stacks/
+
+class MyQueue {
+        private Stack<Integer> first;
+        private Stack<Integer> Second;
+
+    public MyQueue() {
+        first=new Stack<>();
+            Second=new Stack<>();
+    }
+
+    public void push(int x) {
+        while (!first.isEmpty()){
+                Second.push(first.pop());
+            }
+            first.push(x);
+            while (!Second.isEmpty()){
+                first.push(Second.pop());
+            }
+    }
+
+    public int pop() {
+        return first.pop();
+    }
+
+    public int peek() {
+        return first.peek();
+    }
+
+    public boolean empty() {
+        return first.isEmpty();
+    }
+}
+
+/**
+ * Your MyQueue object will be instantiated and called as such:
+ * MyQueue obj = new MyQueue();
+ * obj.push(x);
+ * int param_2 = obj.pop();
+ * int param_3 = obj.peek();
+ * boolean param_4 = obj.empty();
+ */
+
+ https://leetcode.com/problems/largest-rectangle-in-histogram/submissions/1555270259/
+  public int largestRectangleArea(int[] heights) {
+     Stack<Integer> stack = new Stack<>();
+     int max = 0;
+
+     stack.push(0);
+
+     for (int i = 1; i < heights.length; i++) {
+       while (!stack.isEmpty() && heights[i] < heights[stack.peek()]) {
+         max = getMax(heights, stack, max, i);
+       }
+       stack.push(i);
+     }
+
+     int i = heights.length;
+     while (!stack.isEmpty()) {
+       max = getMax(heights, stack, max, i);
+     }
+
+     return max;
+   }
+
+   private static int getMax(int[] arr, Stack<Integer> stack, int max, int i) {
+     int area;
+     int popped = stack.pop();
+     if (stack.isEmpty()) {
+       area = arr[popped] * i;
+     } else {
+       area = arr[popped] * (i - 1 - stack.peek());
+     }
+     return Math.max(max, area);
+   }
