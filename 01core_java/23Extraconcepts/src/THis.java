@@ -1,4 +1,4 @@
-class Employee {
+public class THis {
 
     int age = 25;
 
@@ -8,7 +8,7 @@ class Employee {
 
     public static void main(String[] args) {
 
-        Employee e1 = new Employee();
+        THis e1 = new THis();
 
         System.out.println(e1.age);  // 25
 

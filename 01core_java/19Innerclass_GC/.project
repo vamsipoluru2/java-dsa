@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>Io_Packages(java Stream)</name>
+	<name>19Innerclass_GC</name>
 	<comment></comment>
 	<projects>
 	</projects>
@@ -16,7 +16,7 @@
 	</natures>
 	<filteredResources>
 		<filter>
-			<id>1778783248249</id>
+			<id>1778783248191</id>
 			<name></name>
 			<type>30</type>
 			<matcher>

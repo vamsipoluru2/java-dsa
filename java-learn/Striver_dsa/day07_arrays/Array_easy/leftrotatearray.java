@@ -18,4 +18,9 @@ public class leftrotatearray {
         return arr;
 
     }
+
+    static int[] leftrotK(int[] arr,int k){
+        
+            
+    }
 }
