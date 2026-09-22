@@ -8,6 +8,7 @@ public interface car {
     default void stop() {
         System.out.println("Car stopped");
     }
+    @SuppressWarnings("unused")
     private void privateMethod() {
         System.out.println("Private method in interface");
     }
