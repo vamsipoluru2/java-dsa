@@ -74,7 +74,7 @@ public class Twosum {
     }
 
     // return new int[]{-1, -1};
-    return "No";
+    return "No"; 
 }
 
 
