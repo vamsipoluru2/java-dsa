@@ -25,7 +25,7 @@ public class SortArray{
 
     int count0 = 0;
     int count1 = 0;
-    int count2 = 0;
+    // int count2 = 0;
 
     // Count 0s, 1s and 2s
     for (int num : nums) {
