@@ -1,0 +1,47 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Compile current Java file",
+            "type": "process",
+            "command": "C:\\Program Files\\Eclipse Adoptium1\\jdk-21.0.3.9-hotspot\\bin\\javac.exe",
+            "args": [
+                "-g",
+                "-d", "${workspaceFolder}/.vscode/java-build",
+                "-sourcepath", "${fileDirname}",
+                "${file}"
+            ],
+            "problemMatcher": "$javac"
+        },
+        {
+            "label": "Run current Java file",
+            "type": "process",
+            "command": "C:\\Program Files\\Eclipse Adoptium1\\jdk-21.0.3.9-hotspot\\bin\\java.exe",
+            "args": ["-XX:+ShowCodeDetailsInExceptionMessages", "${file}"],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "dedicated",
+                "clear": true
+            },
+            "problemMatcher": "$javac"
+        },
+        {
+            "label": "Compile UpperLowerBound",
+            "type": "process",
+            "command": "C:\\Program Files\\Eclipse Adoptium1\\jdk-21.0.3.9-hotspot\\bin\\javac.exe",
+            "args": [
+                "-d",
+                "${workspaceFolder}/.vscode/java-build",
+                "${workspaceFolder}/java-learn/Striver_dsa/day09_BinarySearch/BS_Basic/_02UpperLowerBound.java"
+            ],
+            "problemMatcher": "$javac"
+        }
+    ]
+}

@@ -1,0 +1,84 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "_10SingleEleInSortedArray",
+            "request": "launch",
+            "mainClass": "_10SingleEleInSortedArray",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "Run current Java file",
+            "request": "launch",
+            "mainClass": "${file}",
+            "classPaths": [
+                "${workspaceFolder}/.vscode/java-build"
+            ],
+            "sourcePaths": [
+                "${fileDirname}"
+            ],
+            "javaExec": "C:\\Program Files\\Eclipse Adoptium1\\jdk-21.0.3.9-hotspot\\bin\\java.exe",
+            "preLaunchTask": "Compile current Java file",
+            "console": "integratedTerminal"
+        },
+        {
+            "type": "java",
+            "name": "_08MInRBS",
+            "request": "launch",
+            "mainClass": "_08MInRBS",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "_07RBSDUPLI",
+            "request": "launch",
+            "mainClass": "_07RBSDUPLI",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "_06RBSUnique",
+            "request": "launch",
+            "mainClass": "_06RBSUnique",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "_05FirstLastOccurrence",
+            "request": "launch",
+            "mainClass": "_05FirstLastOccurrence",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "_03SearchInPosition",
+            "request": "launch",
+            "mainClass": "_03SearchInPosition",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "_04FloorandCeil",
+            "request": "launch",
+            "mainClass": "_04FloorandCeil",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "Run UpperLowerBound (direct build)",
+            "request": "launch",
+            "mainClass": "_02UpperLowerBound",
+            "classPaths": [
+                "${workspaceFolder}/.vscode/java-build"
+            ],
+            "sourcePaths": [
+                "${workspaceFolder}/java-learn/Striver_dsa/day09_BinarySearch/BS_Basic"
+            ],
+            "javaExec": "C:\\Program Files\\Eclipse Adoptium1\\jdk-21.0.3.9-hotspot\\bin\\java.exe",
+            "preLaunchTask": "Compile UpperLowerBound",
+            "console": "integratedTerminal"
+        }
+    ]
+}

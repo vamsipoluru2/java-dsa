@@ -1,3 +1,22 @@
 {
-    "java.debug.settings.onBuildFailureProceed": true
+    "java.debug.settings.onBuildFailureProceed": false,
+    "java.debug.settings.forceBuildBeforeLaunch": true,
+    "java.autobuild.enabled": true,
+    "java.configuration.updateBuildConfiguration": "automatic",
+    "java.project.sourcePaths": [
+        "java-learn",
+        "01core_java",
+        "Assignments"
+    ],
+    "java.configuration.runtimes": [
+        {
+            "name": "JavaSE-21",
+            "path": "C:\\Program Files\\Eclipse Adoptium1\\jdk-21.0.3.9-hotspot",
+            "default": true
+        },
+        {
+            "name": "JavaSE-11",
+            "path": "C:\\Program Files\\Eclipse Adoptium\\jdk-11.0.27"
+        }
+    ]
 }

@@ -21,9 +21,8 @@ public class WritingObjectToFile {
 			e.printStackTrace();
 		}
 		
- 
 	}
- 
+	// os.close();
 }
  
  
