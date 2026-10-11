@@ -3,6 +3,41 @@
     "configurations": [
         {
             "type": "java",
+            "name": "_08FindKthMissingNum",
+            "request": "launch",
+            "mainClass": "_08FindKthMissingNum",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "_06SmallestDivisorwithinthreshold",
+            "request": "launch",
+            "mainClass": "_06SmallestDivisorwithinthreshold",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "_04KOKOBanana",
+            "request": "launch",
+            "mainClass": "_04KOKOBanana",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "_02Sqrtofn",
+            "request": "launch",
+            "mainClass": "_02Sqrtofn",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "_01PeakInArray",
+            "request": "launch",
+            "mainClass": "_01PeakInArray",
+            "projectName": ""
+        },
+        {
+            "type": "java",
             "name": "_10SingleEleInSortedArray",
             "request": "launch",
             "mainClass": "_10SingleEleInSortedArray",

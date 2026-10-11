@@ -7,6 +7,7 @@ public class _03SearchInPosition {
         System.out.println("Index: " + searchInposition(arr, target));
     }
 
+    //it searched the nearest number for the target and returns the index of that number
     static int searchInposition(int[] arr, int target) {
           int start=0;
           int end=arr.length-1;

@@ -1,5 +1,5 @@
 {
-    "java.debug.settings.onBuildFailureProceed": false,
+    "java.debug.settings.onBuildFailureProceed": true,
     "java.debug.settings.forceBuildBeforeLaunch": true,
     "java.autobuild.enabled": true,
     "java.configuration.updateBuildConfiguration": "automatic",
