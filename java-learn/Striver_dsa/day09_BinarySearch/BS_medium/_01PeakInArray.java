@@ -25,7 +25,7 @@ public class _01PeakInArray {
             else high=mid-1;//peak is at left sde
         }
         return -1;
-    }
+    } 
     static int findPeak(int[] arr) {
 
     int low = 0;

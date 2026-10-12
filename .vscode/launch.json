@@ -3,6 +3,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "_03SearchRowColSortedMatrix",
+            "request": "launch",
+            "mainClass": "_03SearchRowColSortedMatrix",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "_01FindRowWithMax1s",
+            "request": "launch",
+            "mainClass": "_01FindRowWithMax1s",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "_01Alocate_books",
+            "request": "launch",
+            "mainClass": "_01Alocate_books",
+            "projectName": ""
+        },
+        {
+            "type": "java",
             "name": "_08FindKthMissingNum",
             "request": "launch",
             "mainClass": "_08FindKthMissingNum",

@@ -8,5 +8,5 @@ public class _09ParinterPartatioon {
  * split nums into k non-empty contiguous subarrays.
  * Minimize the largest sum among those k subarrays.
  */
-    
+     
 }
