@@ -1,8 +1,16 @@
 public class MaxProductSubArray {
+    // Que:Given an integer array nums. Find the subarray with the largest product, and return the product of the elements present in that subarray.   
+    // A subarray is a contiguous non-empty sequence of elements within an array.
     public static void main(String[] args) {
-        
+        int[] evenNeg = {-2, 3, -4};
+        int[] oddNeg = {-2, 3, -4, -1};
+        int[] withZero = {-2, 0, -1, 4, -3};
+
+        System.out.println("Brute: " + maxProductBrute(evenNeg));
+        System.out.println("Better: " + maxProductBetter(oddNeg));
+        System.out.println("Optimal: " + maxProductOpti(withZero));
     }
-      public int maxProduct(int[] nums) {
+      static int maxProductBrute(int[] nums) {
         int result = Integer.MIN_VALUE;
 
         for (int i = 0; i < nums.length; i++) {
@@ -17,7 +25,7 @@ public class MaxProductSubArray {
         return result;
     }
 
-    public int maxProductBetter(int[] nums) {
+    static int maxProductBetter(int[] nums) {
         int result = nums[0];
         for (int i = 0; i < nums.length; i++) {
             int p = nums[i];
@@ -30,7 +38,7 @@ public class MaxProductSubArray {
         return result;
     }
 
-    public int maxProductOpti(int[] nums) {
+    static int maxProductOpti(int[] nums) {
         int n = nums.length; 
         int ans = Integer.MIN_VALUE; // to store the answer
         

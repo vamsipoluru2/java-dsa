@@ -3,6 +3,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "MaxProductSubArray",
+            "request": "launch",
+            "mainClass": "MaxProductSubArray",
+            "projectName": ""
+        },
+        {
+            "type": "java",
             "name": "Reverse_pairs",
             "request": "launch",
             "mainClass": "Reverse_pairs",
