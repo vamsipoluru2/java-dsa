@@ -2,7 +2,9 @@
 
 // The majority element of an numsay is an element that appears more than n/2 times in the numsay. The numsay is guaranteed to have a majority element.
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 public class majorityele {
@@ -69,8 +71,7 @@ public class majorityele {
         //This part is the verification step of the Boyer-Moore algorithm. Its purpose is to answer:
          // Verify candidate
         int cnt1 = 0;
-
-        for (int i = 0; i < n; i++) {
+        for (int i =  0; i < n; i++) {
             if (nums[i] == ele) {
                 cnt1++;
             }
@@ -83,4 +84,4 @@ public class majorityele {
 
         return -1;
      }
-}
+    }

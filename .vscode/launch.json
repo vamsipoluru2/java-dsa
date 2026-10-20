@@ -3,6 +3,55 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Reverse_pairs",
+            "request": "launch",
+            "mainClass": "Reverse_pairs",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "Count_inversions",
+            "request": "launch",
+            "mainClass": "Count_inversions",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "MajorityElementII",
+            "request": "launch",
+            "mainClass": "MajorityElementII",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "majorityele",
+            "request": "launch",
+            "mainClass": "majorityele",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "SetmatrixZeros",
+            "request": "launch",
+            "mainClass": "SetmatrixZeros",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "ReccInsertionsort",
+            "request": "launch",
+            "mainClass": "ReccInsertionsort",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "RecursiveBBsort",
+            "request": "launch",
+            "mainClass": "RecursiveBBsort",
+            "projectName": ""
+        },
+        {
+            "type": "java",
             "name": "_03SearchRowColSortedMatrix",
             "request": "launch",
             "mainClass": "_03SearchRowColSortedMatrix",
