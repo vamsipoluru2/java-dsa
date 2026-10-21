@@ -3,6 +3,48 @@
     "configurations": [
         {
             "type": "java",
+            "name": "MergeOverLapInter",
+            "request": "launch",
+            "mainClass": "MergeOverLapInter",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "_04CounSubArrayXorK",
+            "request": "launch",
+            "mainClass": "_04CounSubArrayXorK",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "_03CountSubarrysumK",
+            "request": "launch",
+            "mainClass": "_03CountSubarrysumK",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "_02LongestSubArray",
+            "request": "launch",
+            "mainClass": "_02LongestSubArray",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "_01LongestConseSeq",
+            "request": "launch",
+            "mainClass": "_01LongestConseSeq",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "hash",
+            "request": "launch",
+            "mainClass": "Striver_dsa.day04_hashing.hash",
+            "projectName": ""
+        },
+        {
+            "type": "java",
             "name": "MaxProductSubArray",
             "request": "launch",
             "mainClass": "MaxProductSubArray",
