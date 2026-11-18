@@ -1,13 +1,21 @@
 {
+    "code-runner.runInTerminal": true,
+    "code-runner.fileDirectoryAsCwd": true,
+    "code-runner.saveFileBeforeRun": true,
+    "code-runner.executorMap": {
+        "java": "cmd /c \"cd /d $dir && javac -g -d %TEMP%\\jrun $fileName && java -cp %TEMP%\\jrun $fileNameWithoutExt\""
+    },
+    "java.debug.settings.enableRunDebugCodeLens": false,
     "java.debug.settings.onBuildFailureProceed": true,
     "java.debug.settings.forceBuildBeforeLaunch": true,
     "java.autobuild.enabled": true,
     "java.configuration.updateBuildConfiguration": "automatic",
     "java.project.sourcePaths": [
-        "java-learn",
-        "01core_java",
-        "Assignments"
+        "."
     ],
+    "java.project.outputPath": "bin",
+    "java.errors.incompleteClasspath.severity": "ignore",
+    "java.compile.nullAnalysis.mode": "disabled",
     "java.configuration.runtimes": [
         {
             "name": "JavaSE-21",

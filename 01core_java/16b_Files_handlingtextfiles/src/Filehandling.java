@@ -3,7 +3,7 @@ import java.io.File;
 import java.io.IOException;
 public class Filehandling {
     public static void main(String[] args) throws IOException {
-        File f = new File("C:\\Users\\vamsi\\Downloads\\Manhattan_2025-main\\Manhattan_2025-main\\01core_java\\016Files\\src\\TextFiles.txt");//(path of the file)
+        File f = new File("TextFiles.txt");//(path of the file, relative to this src folder)
         System.out.println(f.exists());
         System.out.println(f.delete());
         System.out.println(f.createNewFile());

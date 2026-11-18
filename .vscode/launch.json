@@ -1,238 +1,50 @@
 {
-    "version": "0.2.0",
-    "configurations": [
-        {
-            "type": "java",
-            "name": "MergeOverLapInter",
-            "request": "launch",
-            "mainClass": "MergeOverLapInter",
-            "projectName": ""
-        },
-        {
-            "type": "java",
-            "name": "_04CounSubArrayXorK",
-            "request": "launch",
-            "mainClass": "_04CounSubArrayXorK",
-            "projectName": ""
-        },
-        {
-            "type": "java",
-            "name": "_03CountSubarrysumK",
-            "request": "launch",
-            "mainClass": "_03CountSubarrysumK",
-            "projectName": ""
-        },
-        {
-            "type": "java",
-            "name": "_02LongestSubArray",
-            "request": "launch",
-            "mainClass": "_02LongestSubArray",
-            "projectName": ""
-        },
-        {
-            "type": "java",
-            "name": "_01LongestConseSeq",
-            "request": "launch",
-            "mainClass": "_01LongestConseSeq",
-            "projectName": ""
-        },
-        {
-            "type": "java",
-            "name": "hash",
-            "request": "launch",
-            "mainClass": "Striver_dsa.day04_hashing.hash",
-            "projectName": ""
-        },
-        {
-            "type": "java",
-            "name": "MaxProductSubArray",
-            "request": "launch",
-            "mainClass": "MaxProductSubArray",
-            "projectName": ""
-        },
-        {
-            "type": "java",
-            "name": "Reverse_pairs",
-            "request": "launch",
-            "mainClass": "Reverse_pairs",
-            "projectName": ""
-        },
-        {
-            "type": "java",
-            "name": "Count_inversions",
-            "request": "launch",
-            "mainClass": "Count_inversions",
-            "projectName": ""
-        },
-        {
-            "type": "java",
-            "name": "MajorityElementII",
-            "request": "launch",
-            "mainClass": "MajorityElementII",
-            "projectName": ""
-        },
-        {
-            "type": "java",
-            "name": "majorityele",
-            "request": "launch",
-            "mainClass": "majorityele",
-            "projectName": ""
-        },
-        {
-            "type": "java",
-            "name": "SetmatrixZeros",
-            "request": "launch",
-            "mainClass": "SetmatrixZeros",
-            "projectName": ""
-        },
-        {
-            "type": "java",
-            "name": "ReccInsertionsort",
-            "request": "launch",
-            "mainClass": "ReccInsertionsort",
-            "projectName": ""
-        },
-        {
-            "type": "java",
-            "name": "RecursiveBBsort",
-            "request": "launch",
-            "mainClass": "RecursiveBBsort",
-            "projectName": ""
-        },
-        {
-            "type": "java",
-            "name": "_03SearchRowColSortedMatrix",
-            "request": "launch",
-            "mainClass": "_03SearchRowColSortedMatrix",
-            "projectName": ""
-        },
-        {
-            "type": "java",
-            "name": "_01FindRowWithMax1s",
-            "request": "launch",
-            "mainClass": "_01FindRowWithMax1s",
-            "projectName": ""
-        },
-        {
-            "type": "java",
-            "name": "_01Alocate_books",
-            "request": "launch",
-            "mainClass": "_01Alocate_books",
-            "projectName": ""
-        },
-        {
-            "type": "java",
-            "name": "_08FindKthMissingNum",
-            "request": "launch",
-            "mainClass": "_08FindKthMissingNum",
-            "projectName": ""
-        },
-        {
-            "type": "java",
-            "name": "_06SmallestDivisorwithinthreshold",
-            "request": "launch",
-            "mainClass": "_06SmallestDivisorwithinthreshold",
-            "projectName": ""
-        },
-        {
-            "type": "java",
-            "name": "_04KOKOBanana",
-            "request": "launch",
-            "mainClass": "_04KOKOBanana",
-            "projectName": ""
-        },
-        {
-            "type": "java",
-            "name": "_02Sqrtofn",
-            "request": "launch",
-            "mainClass": "_02Sqrtofn",
-            "projectName": ""
-        },
-        {
-            "type": "java",
-            "name": "_01PeakInArray",
-            "request": "launch",
-            "mainClass": "_01PeakInArray",
-            "projectName": ""
-        },
-        {
-            "type": "java",
-            "name": "_10SingleEleInSortedArray",
-            "request": "launch",
-            "mainClass": "_10SingleEleInSortedArray",
-            "projectName": ""
-        },
-        {
-            "type": "java",
-            "name": "Run current Java file",
-            "request": "launch",
-            "mainClass": "${file}",
-            "classPaths": [
-                "${workspaceFolder}/.vscode/java-build"
-            ],
-            "sourcePaths": [
-                "${fileDirname}"
-            ],
-            "javaExec": "C:\\Program Files\\Eclipse Adoptium1\\jdk-21.0.3.9-hotspot\\bin\\java.exe",
-            "preLaunchTask": "Compile current Java file",
-            "console": "integratedTerminal"
-        },
-        {
-            "type": "java",
-            "name": "_08MInRBS",
-            "request": "launch",
-            "mainClass": "_08MInRBS",
-            "projectName": ""
-        },
-        {
-            "type": "java",
-            "name": "_07RBSDUPLI",
-            "request": "launch",
-            "mainClass": "_07RBSDUPLI",
-            "projectName": ""
-        },
-        {
-            "type": "java",
-            "name": "_06RBSUnique",
-            "request": "launch",
-            "mainClass": "_06RBSUnique",
-            "projectName": ""
-        },
-        {
-            "type": "java",
-            "name": "_05FirstLastOccurrence",
-            "request": "launch",
-            "mainClass": "_05FirstLastOccurrence",
-            "projectName": ""
-        },
-        {
-            "type": "java",
-            "name": "_03SearchInPosition",
-            "request": "launch",
-            "mainClass": "_03SearchInPosition",
-            "projectName": ""
-        },
-        {
-            "type": "java",
-            "name": "_04FloorandCeil",
-            "request": "launch",
-            "mainClass": "_04FloorandCeil",
-            "projectName": ""
-        },
-        {
-            "type": "java",
-            "name": "Run UpperLowerBound (direct build)",
-            "request": "launch",
-            "mainClass": "_02UpperLowerBound",
-            "classPaths": [
-                "${workspaceFolder}/.vscode/java-build"
-            ],
-            "sourcePaths": [
-                "${workspaceFolder}/java-learn/Striver_dsa/day09_BinarySearch/BS_Basic"
-            ],
-            "javaExec": "C:\\Program Files\\Eclipse Adoptium1\\jdk-21.0.3.9-hotspot\\bin\\java.exe",
-            "preLaunchTask": "Compile UpperLowerBound",
-            "console": "integratedTerminal"
-        }
-    ]
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "_03SortLL012",
+      "request": "launch",
+      "mainClass": "_03SortLL012",
+      "projectName": ""
+    },
+    {
+      "type": "java",
+      "name": "_02OddEvenLL_Segerate",
+      "request": "launch",
+      "mainClass": "_02OddEvenLL_Segerate",
+      "preLaunchTask": "Compile _02OddEvenLL_Segerate",
+      "classPaths": [
+        "${workspaceFolder}/.vscode/java-build"
+      ]
+    },
+    {
+      "type": "java",
+      "name": "Run _01Add_num_LL",
+      "request": "launch",
+      "mainClass": "_01Add_num_LL",
+      "cwd": "${workspaceFolder}/java-learn/Striver_dsa/day06_LInked_List/LL_easy"
+    },
+    {
+      "type": "java",
+      "name": "Run _01LL_create",
+      "request": "launch",
+      "mainClass": "_01LL_create",
+      "cwd": "${workspaceFolder}/java-learn/Striver_dsa/day06_LInked_List/LL_basic"
+    },
+    {
+      "type": "java",
+      "name": "Run _04DoublyLL",
+      "request": "launch",
+      "mainClass": "_04DoublyLL",
+      "cwd": "${workspaceFolder}/java-learn/Striver_dsa/day06_LInked_List/LL_basic"
+    },
+    {
+      "type": "java",
+      "name": "Run Abstraction",
+      "request": "launch",
+      "mainClass": "Abstraction",
+      "cwd": "${workspaceFolder}/01core_java/14AbstractClass/src"
+    }
+  ]
 }

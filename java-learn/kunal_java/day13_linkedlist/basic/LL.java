@@ -102,15 +102,7 @@ public class LL {
         return val;
     }
 
-    // traversing til last
-    public Node get(int index){
 
-        Node node=head;
-        for(int i=0;i<index;i++){
-            node=node.next;
-        }
-        return node;
-    }
 
     public int deleteLast(){
         if(size<=1){
@@ -125,6 +117,15 @@ public class LL {
     }
 
 
+        // traversing til last
+    public Node get(int index){
+
+        Node node=head;
+        for(int i=0;i<index;i++){
+            node=node.next;
+        }
+        return node;
+    }
 
     public int delete(int index){
         if(index==0){
