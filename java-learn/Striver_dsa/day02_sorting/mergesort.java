@@ -1,4 +1,3 @@
-package Striver_dsa.day05_sorting;
 
 import java.util.ArrayList;
 import java.util.Arrays;

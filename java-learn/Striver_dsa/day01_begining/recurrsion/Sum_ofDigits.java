@@ -1,6 +1,6 @@
 public class Sum_ofDigits {
     public static void main(String[] args) {
-        Solution solution = new Solution(); 
+        Sum_ofDigits solution = new Sum_ofDigits(); 
         int num = 529;
  
         // Call the addDigits method and print the result

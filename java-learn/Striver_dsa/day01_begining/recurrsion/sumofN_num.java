@@ -1,4 +1,3 @@
-package Striver_dsa.day03_recurrsion;
 
 public class sumofN_num {
     public static void main(String[] args) {

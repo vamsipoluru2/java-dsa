@@ -1,4 +1,3 @@
-package Striver_dsa.day03_recurrsion;
 
 public class print_name_n_times {
     public static void main(String[] args) {

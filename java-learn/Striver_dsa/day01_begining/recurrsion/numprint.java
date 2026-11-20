@@ -1,4 +1,3 @@
-package Striver_dsa.day03_recurrsion;
 
 import java.util.Scanner;
 

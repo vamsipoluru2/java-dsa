@@ -1,4 +1,3 @@
-package Striver_dsa.day04_hashing;
 
 import java.util.Scanner;
 

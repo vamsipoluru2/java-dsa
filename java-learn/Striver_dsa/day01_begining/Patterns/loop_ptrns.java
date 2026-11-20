@@ -1,4 +1,3 @@
-package Striver_dsa.day02_Patterns;
 
 class Solution{
 

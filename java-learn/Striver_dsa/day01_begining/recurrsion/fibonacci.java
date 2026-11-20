@@ -1,4 +1,3 @@
-package Striver_dsa.day03_recurrsion;
 
 public class fibonacci {
     public static void main(String[] args) {

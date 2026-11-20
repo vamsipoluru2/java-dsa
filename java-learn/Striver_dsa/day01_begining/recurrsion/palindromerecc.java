@@ -1,4 +1,3 @@
-package Striver_dsa.day03_recurrsion;
 
 public class palindromerecc { 
     public static void main(String[] args) {
