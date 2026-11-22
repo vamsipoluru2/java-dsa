@@ -95,6 +95,9 @@ public class StreamOp {
  *     list.stream().forEach(printer);              // prints every element
  *
  *   forEach(System.out::println) already passes a Consumer.
+ * //supplier supplies a value, takes nothing. Method: T get().
+ *  Use it to generate values. generate(), orElseGet() take a Supplier. 
+ *  
  *
  * | Interface      | Method  | Input | Output  | Used in                 |
  * |----------------|---------|-------|---------|-------------------------|

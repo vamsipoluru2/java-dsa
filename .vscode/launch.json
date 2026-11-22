@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Streamsop2",
+      "request": "launch",
+      "mainClass": "Streamsop2",
+      "projectName": "26_javastream"
+    },
+    {
+      "type": "java",
       "name": "StreamOp",
       "request": "launch",
       "mainClass": "StreamOp",
