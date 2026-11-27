@@ -3,6 +3,62 @@
   "configurations": [
     {
       "type": "java",
+      "name": "_04PalindromeLL",
+      "request": "launch",
+      "mainClass": "_04PalindromeLL",
+      "projectName": ""
+    },
+    {
+      "type": "java",
+      "name": "_03DeleteMidOfLL",
+      "request": "launch",
+      "mainClass": "_03DeleteMidOfLL",
+      "projectName": ""
+    },
+    {
+      "type": "java",
+      "name": "_02FindMIdOfLL",
+      "request": "launch",
+      "mainClass": "_02FindMIdOfLL",
+      "projectName": ""
+    },
+    {
+      "type": "java",
+      "name": "_02FindMidOfLL",
+      "request": "launch",
+      "mainClass": "_02FindMidOfLL",
+      "projectName": ""
+    },
+    {
+      "type": "java",
+      "name": "_01Add1ToLL",
+      "request": "launch",
+      "mainClass": "_01Add1ToLL",
+      "projectName": ""
+    },
+    {
+      "type": "java",
+      "name": "_05ReverseAnLL",
+      "request": "launch",
+      "mainClass": "_05ReverseAnLL",
+      "projectName": ""
+    },
+    {
+      "type": "java",
+      "name": "_04RemoveNthNodeFromEnd",
+      "request": "launch",
+      "mainClass": "_04RemoveNthNodeFromEnd",
+      "projectName": ""
+    },
+    {
+      "type": "java",
+      "name": "Calc",
+      "request": "launch",
+      "mainClass": "main.java.com.javas.Calc",
+      "projectName": ""
+    },
+    {
+      "type": "java",
       "name": "Streamsop2",
       "request": "launch",
       "mainClass": "Streamsop2",
